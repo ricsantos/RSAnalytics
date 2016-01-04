@@ -1,0 +1,14 @@
+PODS:
+  - RSAnalytics (0.1.0)
+
+DEPENDENCIES:
+  - RSAnalytics (from `../`)
+
+EXTERNAL SOURCES:
+  RSAnalytics:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RSAnalytics: 5dcd24e55dfbc7a3807e9d0a020efc024f65a1e0
+
+COCOAPODS: 0.39.0

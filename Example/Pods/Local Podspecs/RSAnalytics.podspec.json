@@ -1,0 +1,25 @@
+{
+  "name": "RSAnalytics",
+  "version": "0.1.0",
+  "summary": "A short description of RSAnalytics.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RSAnalytics",
+  "license": "MIT",
+  "authors": {
+    "Ric Santos": "rics@ntos.me"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RSAnalytics.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "RSAnalytics": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

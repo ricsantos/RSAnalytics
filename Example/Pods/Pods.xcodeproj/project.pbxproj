@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35F2E6FE6806FFEC1A2DA001B81BB90C /* RSAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B986EFD1BC55D1837EECD4A2E75EE9B /* RSAnalytics-dummy.m */; };
+		4C8059B236037C8F01A5F322D477E809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		77AF94EBB1158CEDC6A497CB72F9D268 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 300D9B88F175133AC8ACB8111F82E0B9 /* ReplaceMe.m */; };
+		BFCE43363D08E619FFB3E87FDDD5F94E /* Pods-RSAnalytics_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB314FE3DB544A7BBF4436AC6A61FBC /* Pods-RSAnalytics_Tests-dummy.m */; };
+		CA74B800E1785D074A177653FBA54352 /* RSAnalytics.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD935147FF7E0CB7D948DB461BFB8049 /* RSAnalytics.bundle */; };
+		D2E4781F67F5F963A5F3F9EA76A8E6B4 /* Pods-RSAnalytics_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F867F281E2E493990BA243922D699A5C /* Pods-RSAnalytics_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA006FE0392219E265367F0385839BDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		FDB321EC2869FC51FB9D6F76FF066CE2 /* RSAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7155A143085F1D63F30036D4B7BA7C3 /* RSAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2774A3712B0FA9D445F1EA0FC48765E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E0886435E49309DEBE26CA67D24B91;
+			remoteInfo = "RSAnalytics-RSAnalytics";
+		};
+		7BAD0A1C9188BAC91D58B09C1D144B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD64275A1865E56B5DA6BBC504EF3994;
+			remoteInfo = RSAnalytics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08F440CB5DA423544183F4AB5A23C05B /* RSAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSAnalytics-prefix.pch"; sourceTree = "<group>"; };
+		0AB314FE3DB544A7BBF4436AC6A61FBC /* Pods-RSAnalytics_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RSAnalytics_Tests-dummy.m"; sourceTree = "<group>"; };
+		12B77C51BE334D255780D9F76D152888 /* Pods-RSAnalytics_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RSAnalytics_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2B986EFD1BC55D1837EECD4A2E75EE9B /* RSAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSAnalytics-dummy.m"; sourceTree = "<group>"; };
+		300D9B88F175133AC8ACB8111F82E0B9 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		30F615F3D12C2091B33130FF70E56034 /* RSAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A9187B19DFFD9D78C5EF3315EEADAAC /* Pods-RSAnalytics_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RSAnalytics_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		69E3C4865533CB90B4DDC1ACE56B58A8 /* Pods-RSAnalytics_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RSAnalytics_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C86D56265A088CF6FDAB276894D249C /* RSAnalytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSAnalytics.modulemap; sourceTree = "<group>"; };
+		A3408798E763C2B93C96EDD8F50FD25D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A8205B867680E06CA6B20ECED39DC9 /* Pods-RSAnalytics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSAnalytics_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B305BFB3FA75C92BB4291B03105AC62E /* Pods_RSAnalytics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSAnalytics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF055B965F9D0C5FC59D6D0B8D7A262D /* Pods-RSAnalytics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RSAnalytics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3261709BD75C53E20644817E9D90878 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C452CA25C982FC35266F4E20231C580B /* Pods-RSAnalytics_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RSAnalytics_Tests-resources.sh"; sourceTree = "<group>"; };
+		CD935147FF7E0CB7D948DB461BFB8049 /* RSAnalytics.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSAnalytics.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63E762CF475F0FF56411A1FAD38F7C3 /* Pods-RSAnalytics_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RSAnalytics_Tests.modulemap"; sourceTree = "<group>"; };
+		E7155A143085F1D63F30036D4B7BA7C3 /* RSAnalytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSAnalytics-umbrella.h"; sourceTree = "<group>"; };
+		ED21CEC2D1500A9ACE30C27C626B54B7 /* RSAnalytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSAnalytics.xcconfig; sourceTree = "<group>"; };
+		F867F281E2E493990BA243922D699A5C /* Pods-RSAnalytics_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RSAnalytics_Tests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DF5BDD1817BD0D48676C3747EE72228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8059B236037C8F01A5F322D477E809 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426E9214D2E83F85270BCFEE39533D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD55231A1268EE5F77DA7E30F2C335AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA006FE0392219E265367F0385839BDC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3674E2EB102DEC9E81CDFC57F9584ED4 /* RSAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				6C1A1B6DEFED9CA287AD079ADC677D51 /* Pod */,
+				4E56E90402F35D476D4484D02F1AD00D /* Support Files */,
+			);
+			name = RSAnalytics;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		426739A75BF1910904D3BA359A9A3B16 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				300D9B88F175133AC8ACB8111F82E0B9 /* ReplaceMe.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4E56E90402F35D476D4484D02F1AD00D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3408798E763C2B93C96EDD8F50FD25D /* Info.plist */,
+				9C86D56265A088CF6FDAB276894D249C /* RSAnalytics.modulemap */,
+				ED21CEC2D1500A9ACE30C27C626B54B7 /* RSAnalytics.xcconfig */,
+				2B986EFD1BC55D1837EECD4A2E75EE9B /* RSAnalytics-dummy.m */,
+				08F440CB5DA423544183F4AB5A23C05B /* RSAnalytics-prefix.pch */,
+				E7155A143085F1D63F30036D4B7BA7C3 /* RSAnalytics-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RSAnalytics";
+			sourceTree = "<group>";
+		};
+		543ACE05B13DE4B9602080D3645916A2 /* Pods-RSAnalytics_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C3261709BD75C53E20644817E9D90878 /* Info.plist */,
+				D63E762CF475F0FF56411A1FAD38F7C3 /* Pods-RSAnalytics_Tests.modulemap */,
+				12B77C51BE334D255780D9F76D152888 /* Pods-RSAnalytics_Tests-acknowledgements.markdown */,
+				69E3C4865533CB90B4DDC1ACE56B58A8 /* Pods-RSAnalytics_Tests-acknowledgements.plist */,
+				0AB314FE3DB544A7BBF4436AC6A61FBC /* Pods-RSAnalytics_Tests-dummy.m */,
+				3A9187B19DFFD9D78C5EF3315EEADAAC /* Pods-RSAnalytics_Tests-frameworks.sh */,
+				C452CA25C982FC35266F4E20231C580B /* Pods-RSAnalytics_Tests-resources.sh */,
+				F867F281E2E493990BA243922D699A5C /* Pods-RSAnalytics_Tests-umbrella.h */,
+				BF055B965F9D0C5FC59D6D0B8D7A262D /* Pods-RSAnalytics_Tests.debug.xcconfig */,
+				B1A8205B867680E06CA6B20ECED39DC9 /* Pods-RSAnalytics_Tests.release.xcconfig */,
+			);
+			name = "Pods-RSAnalytics_Tests";
+			path = "Target Support Files/Pods-RSAnalytics_Tests";
+			sourceTree = "<group>";
+		};
+		69564677A7CA68F8F58C701EF9467592 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3674E2EB102DEC9E81CDFC57F9584ED4 /* RSAnalytics */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6C1A1B6DEFED9CA287AD079ADC677D51 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				426739A75BF1910904D3BA359A9A3B16 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				69564677A7CA68F8F58C701EF9467592 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D2314FF5D22EF3DA7492BBB0E01743FF /* Products */,
+				E0EEDD7C911C256401D922C7A2264689 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D2314FF5D22EF3DA7492BBB0E01743FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B305BFB3FA75C92BB4291B03105AC62E /* Pods_RSAnalytics_Tests.framework */,
+				CD935147FF7E0CB7D948DB461BFB8049 /* RSAnalytics.bundle */,
+				30F615F3D12C2091B33130FF70E56034 /* RSAnalytics.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0EEDD7C911C256401D922C7A2264689 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				543ACE05B13DE4B9602080D3645916A2 /* Pods-RSAnalytics_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		15E5D4A29059D9A51C5D8982BBAE9334 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB321EC2869FC51FB9D6F76FF066CE2 /* RSAnalytics-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBF6FE86B363C1D40EF04D2239BC0CC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E4781F67F5F963A5F3F9EA76A8E6B4 /* Pods-RSAnalytics_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4E5892601116BA705F8D92E661A32934 /* Pods-RSAnalytics_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42728593551C36B83507BB9E2D0CD7FB /* Build configuration list for PBXNativeTarget "Pods-RSAnalytics_Tests" */;
+			buildPhases = (
+				291151BBA75DFD51E72D35ABAF96C889 /* Sources */,
+				0DF5BDD1817BD0D48676C3747EE72228 /* Frameworks */,
+				DBF6FE86B363C1D40EF04D2239BC0CC1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88876AFA79FFC3345E42591A820D8D5D /* PBXTargetDependency */,
+			);
+			name = "Pods-RSAnalytics_Tests";
+			productName = "Pods-RSAnalytics_Tests";
+			productReference = B305BFB3FA75C92BB4291B03105AC62E /* Pods_RSAnalytics_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52E0886435E49309DEBE26CA67D24B91 /* RSAnalytics-RSAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5023496C55140ABA1801058315441148 /* Build configuration list for PBXNativeTarget "RSAnalytics-RSAnalytics" */;
+			buildPhases = (
+				A575682CBD406BC000F46185BE1599A5 /* Sources */,
+				426E9214D2E83F85270BCFEE39533D0F /* Frameworks */,
+				5EA998127A61B5466695169F30D0CF66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RSAnalytics-RSAnalytics";
+			productName = "RSAnalytics-RSAnalytics";
+			productReference = CD935147FF7E0CB7D948DB461BFB8049 /* RSAnalytics.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BD64275A1865E56B5DA6BBC504EF3994 /* RSAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44C9E3BD15A8A6C54F699A55C4DF8279 /* Build configuration list for PBXNativeTarget "RSAnalytics" */;
+			buildPhases = (
+				96A0BC3624B6563317020F79FA2E74EC /* Sources */,
+				AD55231A1268EE5F77DA7E30F2C335AD /* Frameworks */,
+				C9BD2550BE56D316D025BDE61C2FF647 /* Resources */,
+				15E5D4A29059D9A51C5D8982BBAE9334 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9CAD449C6CD58CABA1EB7EA938EDAE7 /* PBXTargetDependency */,
+			);
+			name = RSAnalytics;
+			productName = RSAnalytics;
+			productReference = 30F615F3D12C2091B33130FF70E56034 /* RSAnalytics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D2314FF5D22EF3DA7492BBB0E01743FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E5892601116BA705F8D92E661A32934 /* Pods-RSAnalytics_Tests */,
+				BD64275A1865E56B5DA6BBC504EF3994 /* RSAnalytics */,
+				52E0886435E49309DEBE26CA67D24B91 /* RSAnalytics-RSAnalytics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EA998127A61B5466695169F30D0CF66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9BD2550BE56D316D025BDE61C2FF647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA74B800E1785D074A177653FBA54352 /* RSAnalytics.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		291151BBA75DFD51E72D35ABAF96C889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCE43363D08E619FFB3E87FDDD5F94E /* Pods-RSAnalytics_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A0BC3624B6563317020F79FA2E74EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77AF94EBB1158CEDC6A497CB72F9D268 /* ReplaceMe.m in Sources */,
+				35F2E6FE6806FFEC1A2DA001B81BB90C /* RSAnalytics-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A575682CBD406BC000F46185BE1599A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88876AFA79FFC3345E42591A820D8D5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSAnalytics;
+			target = BD64275A1865E56B5DA6BBC504EF3994 /* RSAnalytics */;
+			targetProxy = 7BAD0A1C9188BAC91D58B09C1D144B77 /* PBXContainerItemProxy */;
+		};
+		E9CAD449C6CD58CABA1EB7EA938EDAE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RSAnalytics-RSAnalytics";
+			target = 52E0886435E49309DEBE26CA67D24B91 /* RSAnalytics-RSAnalytics */;
+			targetProxy = 2774A3712B0FA9D445F1EA0FC48765E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06C5ABEBEE00DAD65D8DEC0A265B1A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED21CEC2D1500A9ACE30C27C626B54B7 /* RSAnalytics.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSAnalytics/RSAnalytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSAnalytics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSAnalytics/RSAnalytics.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSAnalytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8FDD68566185F9AAFB74399206EC5B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED21CEC2D1500A9ACE30C27C626B54B7 /* RSAnalytics.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RSAnalytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B892DFEFAB89DF35B2905BAC949DEFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED21CEC2D1500A9ACE30C27C626B54B7 /* RSAnalytics.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSAnalytics/RSAnalytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSAnalytics/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSAnalytics/RSAnalytics.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RSAnalytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D063D4AB1FEB76C5B4ED561581FA4EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A8205B867680E06CA6B20ECED39DC9 /* Pods-RSAnalytics_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RSAnalytics_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RSAnalytics_Tests/Pods-RSAnalytics_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RSAnalytics_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D89A6D7D7CCEBC2B597CCF1E00D5A650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF055B965F9D0C5FC59D6D0B8D7A262D /* Pods-RSAnalytics_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RSAnalytics_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RSAnalytics_Tests/Pods-RSAnalytics_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RSAnalytics_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAD05442D4870771735E1C99605AFCC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED21CEC2D1500A9ACE30C27C626B54B7 /* RSAnalytics.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RSAnalytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42728593551C36B83507BB9E2D0CD7FB /* Build configuration list for PBXNativeTarget "Pods-RSAnalytics_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89A6D7D7CCEBC2B597CCF1E00D5A650 /* Debug */,
+				D063D4AB1FEB76C5B4ED561581FA4EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44C9E3BD15A8A6C54F699A55C4DF8279 /* Build configuration list for PBXNativeTarget "RSAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C5ABEBEE00DAD65D8DEC0A265B1A4F /* Debug */,
+				B892DFEFAB89DF35B2905BAC949DEFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5023496C55140ABA1801058315441148 /* Build configuration list for PBXNativeTarget "RSAnalytics-RSAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDD68566185F9AAFB74399206EC5B30 /* Debug */,
+				DAD05442D4870771735E1C99605AFCC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
