@@ -11,40 +11,67 @@
 #import <Crashlytics/Crashlytics.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
+NSString *const RSAnalyticsProviderFabric = @"RSAnalyticsProviderFabric";
+NSString *const RSAnalyticsProviderFacebook = @"RSAnalyticsProviderFacebook";
+NSString *const RSAnalyticsProviderGoogle = @"RSAnalyticsProviderGoogle";
+
+@interface RSAnalytics ()
+
+@property (nonatomic, strong) NSMutableArray *providers;
+
+@end
+
 @implementation RSAnalytics
 
-+ (void)setup
-{
-#ifdef DEBUG
-    return;
-#endif
++ (RSAnalytics *)sharedInstance {
+    static RSAnalytics *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+    });
     
-    [GAI sharedInstance].trackUncaughtExceptions = NO;
-    [GAI sharedInstance].dispatchInterval = 120;
-    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelWarning];
-    [[GAI sharedInstance] trackerWithTrackingId:@"UA-43258429-5"];
-    
-    [Fabric with:@[CrashlyticsKit]];
+    return instance;
 }
 
-+ (void)logEventWithCategory:(NSString *)category action:(NSString *)action
-{
+- (instancetype)init {
+    self = [super init];
+    
+    self.providers = [NSMutableArray array];
+    
+    return self;
+}
+
+- (void)addProvider:(NSString *)provider withKey:(NSString *)key {
+    if (provider == RSAnalyticsProviderFabric) {
+        [Fabric with:@[CrashlyticsKit]];
+        
+    } else if (provider == RSAnalyticsProviderFacebook) {
+        // no init required
+        
+    } else if (provider == RSAnalyticsProviderGoogle) {
+        [GAI sharedInstance].trackUncaughtExceptions = NO;
+        [GAI sharedInstance].dispatchInterval = 120;
+        [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelWarning];
+        [[GAI sharedInstance] trackerWithTrackingId:key];
+        
+    } else {
+        NSLog(@"ERROR: No valid provider supplied.");
+        return;
+    }
+
+    [self.providers addObject:provider];
+}
+
++ (void)logEventWithCategory:(NSString *)category action:(NSString *)action {
     [RSAnalytics logEventWithCategory:category action:action label:nil value:nil];
 }
 
-+ (void)logEventWithCategory:(NSString *)category action:(NSString *)action label:(NSString *)label value:(NSNumber *)value
-{
- 
-#ifdef DEBUG
++ (void)logEventWithCategory:(NSString *)category action:(NSString *)action label:(NSString *)label value:(NSNumber *)value {
+    [[self sharedInstance] logEventWithCategory:category action:action label:label value:value];
+}
+
+- (void)logEventWithCategory:(NSString *)category action:(NSString *)action label:(NSString *)label value:(NSNumber *)value {
     NSLog(@"category: %@, action: %@, label: %@ %@", category, action, label, value);
-    return;
-#endif
-    
-    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-    [tracker send:[[GAIDictionaryBuilder createEventWithCategory:category
-                                                          action:action
-                                                           label:label
-                                                           value:nil] build]];
     
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
     if (label) {
@@ -53,14 +80,26 @@
     if (value) {
         attributes[@"value"] = value;
     }
-    [Answers logCustomEventWithName:action
-                   customAttributes:attributes];
+
+    if ([self.providers containsObject:RSAnalyticsProviderFabric]) {
+        [Answers logCustomEventWithName:action
+                       customAttributes:attributes];
+    }
+
+    if ([self.providers containsObject:RSAnalyticsProviderGoogle]) {
+        id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:category
+                                                              action:action
+                                                               label:label
+                                                               value:nil] build]];
+    }
     
-    [FBSDKAppEvents logEvent:action];
+    if ([self.providers containsObject:RSAnalyticsProviderFacebook]) {
+        [FBSDKAppEvents logEvent:action];
+    }
 }
 
-+ (void)logAppLaunched
-{
++ (void)logAppLaunched {
     [self logEventWithCategory:RSAnalyticsCategorySystem action:@"App Launched"];
     
     BOOL haveLoggedEvent = [[NSUserDefaults standardUserDefaults] boolForKey:@"AnalyticsHaveLoggedAppInstall"];
@@ -74,14 +113,13 @@
     [FBSDKAppEvents activateApp];
 }
 
-+ (void)logUserHasAppRadio
-{
-    BOOL haveLoggedEvent = [[NSUserDefaults standardUserDefaults] boolForKey:@"AnalyticsHaveLoggedUserHasAppRadio"];
++ (void)logOneshotEventWithAction:(NSString *)action andUserDefaultsKey:(NSString *)userDefaultsKey {
+    BOOL haveLoggedEvent = [[NSUserDefaults standardUserDefaults] boolForKey:userDefaultsKey];
     if (!haveLoggedEvent) {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"AnalyticsHaveLoggedUserHasAppRadio"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:userDefaultsKey];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
-        [self logEventWithCategory:RSAnalyticsCategoryOneshot action:@"AppRadio User"];
+        [self logEventWithCategory:RSAnalyticsCategoryOneshot action:action];
     }
 }
 
