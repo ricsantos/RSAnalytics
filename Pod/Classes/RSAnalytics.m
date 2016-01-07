@@ -110,7 +110,9 @@ NSString *const RSAnalyticsProviderGoogle = @"RSAnalyticsProviderGoogle";
         [self logEventWithCategory:RSAnalyticsCategoryOneshot action:@"App Installed"];
     }
     
-    [FBSDKAppEvents activateApp];
+    if ([[self sharedInstance].providers containsObject:RSAnalyticsProviderFacebook]) {
+        [FBSDKAppEvents activateApp];
+    }
 }
 
 + (void)logOneshotEventWithAction:(NSString *)action andUserDefaultsKey:(NSString *)userDefaultsKey {
