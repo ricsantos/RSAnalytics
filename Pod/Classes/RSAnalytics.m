@@ -71,7 +71,7 @@ NSString *const RSAnalyticsProviderGoogle = @"RSAnalyticsProviderGoogle";
 }
 
 - (void)logEventWithCategory:(NSString *)category action:(NSString *)action label:(NSString *)label value:(NSNumber *)value {
-    NSLog(@"category: %@, action: %@, label: %@ %@", category, action, label, value);
+    NSLog(@"RSAnalytics: log event with category: %@, action: %@, label: %@ %@", category, action, label, value);
     
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
     if (label) {
@@ -95,7 +95,35 @@ NSString *const RSAnalyticsProviderGoogle = @"RSAnalyticsProviderGoogle";
     }
     
     if ([self.providers containsObject:RSAnalyticsProviderFacebook]) {
-        [FBSDKAppEvents logEvent:action];
+        [FBSDKAppEvents logEvent:action
+                      parameters:attributes];
+    }
+}
+
++ (void)logEventWithAction:(NSString *)action attributes:(NSDictionary *)attributes {
+    [[self sharedInstance] logEventWithAction:action attributes:attributes];
+}
+
+- (void)logEventWithAction:(NSString *)action attributes:(NSDictionary *)attributes {
+    NSLog(@"RSAnalytics: log event with action: %@, attribues: %@", action, attributes);
+    
+    if ([self.providers containsObject:RSAnalyticsProviderFabric]) {
+        [Answers logCustomEventWithName:action
+                       customAttributes:attributes];
+    }
+    
+    if ([self.providers containsObject:RSAnalyticsProviderGoogle]) {
+        NSLog(@"WARNING: Google Analytics will not be passed parameters.");
+        id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:nil
+                                                              action:action
+                                                               label:nil
+                                                               value:nil] build]];
+    }
+    
+    if ([self.providers containsObject:RSAnalyticsProviderFacebook]) {
+        [FBSDKAppEvents logEvent:action
+                      parameters:attributes];
     }
 }
 

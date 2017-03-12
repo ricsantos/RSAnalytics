@@ -23,6 +23,7 @@ extern NSString *const RSAnalyticsProviderGoogle;
 
 + (void)logEventWithCategory:(NSString *)category action:(NSString *)action;
 + (void)logEventWithCategory:(NSString *)category action:(NSString *)action label:(NSString *)label value:(NSNumber *)value;
++ (void)logEventWithAction:(NSString *)action attributes:(NSDictionary *)attributes;
 
 + (void)logAppLaunched;
 + (void)logOneshotEventWithAction:(NSString *)action andUserDefaultsKey:(NSString *)userDefaultsKey;
