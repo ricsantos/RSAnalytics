@@ -21,6 +21,8 @@ extern NSString *const RSAnalyticsProviderGoogle;
 
 - (void)addProvider:(NSString *)provider withKey:(NSString *)key;
 
++ (NSMutableDictionary *)deviceAttributes;
+
 + (void)logEventWithCategory:(NSString *)category action:(NSString *)action;
 + (void)logEventWithCategory:(NSString *)category action:(NSString *)action label:(NSString *)label value:(NSNumber *)value;
 + (void)logEventWithAction:(NSString *)action attributes:(NSDictionary *)attributes;

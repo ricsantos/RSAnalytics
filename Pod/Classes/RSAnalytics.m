@@ -62,6 +62,25 @@ NSString *const RSAnalyticsProviderGoogle = @"RSAnalyticsProviderGoogle";
     [self.providers addObject:provider];
 }
 
++ (NSMutableDictionary *)deviceAttributes {
+    NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+    
+    attributes[@"System version"] = [[UIDevice currentDevice] systemVersion];
+    
+    
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *majorVersion = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    if (majorVersion) {
+        attributes[@"App version"] = majorVersion;
+    }
+    NSString *buildNumber = [infoDictionary objectForKey:@"CFBundleVersion"];
+    if (buildNumber) {
+        attributes[@"Build number"] = buildNumber;
+    }
+    
+    return attributes;
+}
+
 + (void)logEventWithCategory:(NSString *)category action:(NSString *)action {
     [RSAnalytics logEventWithCategory:category action:action label:nil value:nil];
 }
